@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whistleblower Blog</title>
+  <link rel="stylesheet" href="webpage.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Whistleblower Blog</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="login.html">Login</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Speak Up, Stay Anonymous</h1>
+    <p>Report anything confidentially and securely.</p>
+  </div>
+</div>
+
+<div class="button-container">
+  <button class="comment-button" onclick="openAskModal()">Add Comment</button>
+</div>
+
+<!-- Ask Question Modal -->
+<div id="askModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAskModal()">&times;</span>
+    <h2>Add Question</h2>
+
+    <div class="tips-box">
+      <h3>Whatever Question's you have Feel Free to ask</h3>
+      <ul>
+        <li>Make sure your question has not been asked already</li>
+        <li>Be Sure to be polite and Friendly if possible</li>
+        <li>The community will always help you with your problems</li>
+      </ul>
+    </div>
+
+    <textarea id="questionText" placeholder="Please Type your Question in this box" required></textarea>
+
+    <div class="ask-actions">
+      <button class="cancel-btn" onclick="closeAskModal()">Cancel</button>
+      <button class="submit-btn" onclick="submitQuestion()">Add Question</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

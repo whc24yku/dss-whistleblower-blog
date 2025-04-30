@@ -3,8 +3,10 @@ const authRoutes = require('./routes/auth');
 const postRoutes = require('./routes/posts');
 const questionRoutes = require('./routes/questions');
 require('dotenv').config();
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
@@ -18,7 +20,7 @@ app.use((req, res, next) => {
 
 // CORS for local development
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
     res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type');
     next();
@@ -34,6 +36,10 @@ app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ error: 'Internal server error' });
 });
+
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+  });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
