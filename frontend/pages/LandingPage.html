@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="C:\Users\lenax\OneDrive\Desktop\dss-whistleblower-blog\frontend\assets\css\LandingPage.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../assets/css/LandingPage.css" />
   <title>Whistle Blowing Landing Page</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Whistle Blowing</h1>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Recent Posts</a></li>
-            <li><a href="#notification">Notifications</a></li>
-            <li><a href="#about">About Us</a></li> 
-          </ul>
-        </nav>
+  <header>
+    <h1>Welcome to Whistle Blowing</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Recent Posts</a></li>
+        <li><a href="#notification">Notifications</a></li>
+        <li><a href="#about">About Us</a></li> 
+      </ul>
+    </nav>
 
-        <form action="#" method="get" class="search-form1">
-            <input type="text" placeholder="Search Something.." name="search" class="search-bar1">
-        </form>
-        <div class="action-button1" onclick="window.location.href='frontend/pages/question.html';">Question?</div>
+    <form action="#" method="get" class="search-form1">
+      <input type="text" placeholder="Search Something.." name="search" class="search-bar1" />
+    </form>
+    
+    <div class="action-button1" onclick="window.location.href='../pages/question.html';">Question?</div>
 
-        <div class="user-icon1">
-            <img src="path/to/your/image.jpg" alt="User Image"> 
+    <div class="user-icon1">
+      <img src="path/to/your/image.jpg" alt="User Image" />
+    </div>
+  </header>
+
+  <div class="action-buttons">
+    <div class="user-icon2">
+      <img src="path/to/your/image.jpg" alt="User Image" />
+    </div>
+    <form action="#" method="get" class="search-form2">
+      <input type="text" placeholder="What do you want to share?" name="search" class="search-bar2" />
+    </form>
+    
+    <button onclick="window.location.href='question.html';">Ask Question</button>
+    <button onclick="window.location.href='posts.html';">Create Post</button>
+  </div>
+
+  <section class="complaints-section">
+    <div class="complaint1">
+      <h2>Anonymous</h2>
+      <p class="complaint-text1">
+        As an employee of RAL Corporation, I have witnessed several cases of unethical behavior that have gone unaddressed by management...
+      </p>
+
+      <div class="interaction-panel">
+        <button class="upvote-btn">🔼 Upvote</button>
+        <span class="vote-count">0</span>
+        <button class="downvote-btn">🔽 Downvote</button>
+
+        <div class="comment-section">
+          <input type="text" placeholder="Write a comment..." class="comment-input" />
+          <button class="comment-btn">Post</button>
+          <div class="comment-list"></div>
         </div>
-    </header>
-
-    <div class="action-buttons">
-        <div class="user-icon2">
-            <img src="path/to/your/image.jpg" alt="User Image"> 
-        </div>
-        <form action="#" method="get" class="search-form2">
-            <input type="text" placeholder="What do you want to share?" name="search" class="search-bar2">
-        </form>
-       
-        <button onclick="window.location.href='question.html';">Ask Question</button>
-        <button onclick="window.location.href='posts.html';">Create Post</button>
-
-   
+      </div>
     </div>
 
-    <section class="complaints-section">
-        <div class="complaint1">
-            <h2>Anonymous</h2>
-            <p class="complaint-text1">As an employee of RAL Corporation, I have witnessed several cases of unethical behavior that have gone unaddressed by management. On multiple occasions, colleagues have been harassed in the workplace, and despite numerous reports being filed, no action has been taken. There are also ongoing issues with the company's failure to provide proper safety equipment, which is in direct violation of occupational health and safety regulations. I am speaking out in the hope that action will finally be taken to protect workers and hold the responsible parties accountable. It's time for change, and I believe whistleblowing is the first step towards a safer, more ethical workplace.</p>
-        </div>
+    <div class="complaint2">
+      <h3>Lexi</h3>
+      <p class="complaint-text2">
+        I am writing this complaint to report an ongoing issue at XYZ Financial Services...
+      </p>
 
-        <div class="complaint2">
-            <h3>Lexi</h3>
-            <p class="complaint-text2">I am writing this complaint to report an ongoing issue at XYZ Financial Services. Over the past several months, I have noticed a lack of transparency in how client funds are being managed. Despite repeated requests for clarification, there has been no clear explanation provided regarding the company’s investment practices. Additionally, I’ve observed that employees who question these practices are often dismissed or discouraged from raising concerns. This is an unethical practice that undermines trust in the company. I believe that whistleblowing is necessary to expose the truth and ensure that the company's operations are aligned with legal and ethical standards.</p>
-        </div>
-    </section>
+      <div class="interaction-panel">
+        <button class="upvote-btn">🔼 Upvote</button>
+        <span class="vote-count">0</span>
+        <button class="downvote-btn">🔽 Downvote</button>
 
+        <div class="comment-section">
+          <input type="text" placeholder="Write a comment..." class="comment-input" />
+          <button class="comment-btn">Post</button>
+          <div class="comment-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Link to external JS file -->
+  <script src="../assets/js/interactions.js"></script>
 </body>
 </html>

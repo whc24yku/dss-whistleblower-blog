@@ -72,7 +72,7 @@ nav ul li a {
   }
 
 .action-buttons {
-    background-color: #fff;
+    background-color: #590303;
     padding: 5px;
     display: flex;
     justify-content:right;
@@ -148,6 +148,36 @@ nav ul li a {
     font-size: 16px;
     color: black;
     padding: 5px;
+  }
+  .interaction-panel {
+    margin-top: 10px;
+  }
+  
+  .upvote-btn, .downvote-btn, .comment-btn {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .vote-count {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .comment-section {
+    margin-top: 10px;
+    color: #590303;
+  }
+  
+  .comment-input {
+    width: 60%;
+    padding: 5px;
+   
+  }
+  
+  .comment-list {
+    margin-top: 10px;
+    font-size: 0.9em;
   }
   
   
