@@ -267,4 +267,15 @@ textarea#questionText {
 .tips-box ul {
   list-style-type: disc;
   padding-left: 20px;
+/* }questions showed after posting */
+.questions-container {
+  padding: 20px;
+}
+
+.question-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
