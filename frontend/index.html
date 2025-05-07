@@ -5,15 +5,17 @@
   <title>Whistleblower Blog</title>
   <link rel="stylesheet" href="webpage.css">
 </head>
-<body>
+<body>cd
 
 <nav class="navbar">
   <div class="logo">Whistleblower Blog</div>
   <div class="nav-links">
     <a href="index.html">Home</a>
-    <a href="signup.html">Sign Up</a>
-    <a href="login.html">Login</a>
+    <a href="signup.html" id="signupLink" style="display: none;">Sign Up</a>
+    <a href="login.html" id="loginLink" style="display: none;">Login</a>
   </div>
+  <!-- Logout button will be shown when user is logged in -->
+  <button id="logoutButton" style="display: none;" onclick="logout()">Logout</button>
 </nav>
 
 <div class="hero">
@@ -23,7 +25,10 @@
   </div>
 </div>
 
-<div class="button-container">
+<div id="questionsContainer" class="questions-container"></div>
+
+<!-- ✅ Add Comment button container with matching ID for script.js -->
+<div class="button-container" id="commentButtonContainer" style="display: none;">
   <button class="comment-button" onclick="openAskModal()">Add Comment</button>
 </div>
 
