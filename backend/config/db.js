@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 require('dotenv').config();
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL || 'postgresql://postgres:admin@localhost:5432/whistleblower_db',
+    connectionString: process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/whistleblower_db',
 });
 
 pool.on('error', (err) => {

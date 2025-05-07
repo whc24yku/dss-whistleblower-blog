@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../assets/css/posts.css">
+
+  <title>Custom Post Modal</title>
+</head>
+<body>
+  <div class="overlay">
+    <div class="custom-modal">
+      <div class="modal-top">
+        <span class="user-badge"></span>
+        <div class="user-info">
+          <strong>USER</strong>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" id="postSomethingBtn">Post Something</button>
+        <button class="tab" id="askQuestionBtn">Ask a Question</button>
+      </div>
+      
+      <textarea class="post-heading" id="title" placeholder="Add Heading"></textarea>
+      <textarea class="post-input" id="content" placeholder="What's on your mind?"></textarea>
+      <button class="submit-btn" id="submitPost">Post</button>
+    </div>
+  </div>
+
+  <script src="../assets/js/posts/CreatePost.js"></script>
+
+
+
+</body>
+</html>
