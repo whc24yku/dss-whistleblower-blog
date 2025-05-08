@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whistleblower Blog</title>
+  <link rel="stylesheet" href="../css/webpage.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Whistleblower Blog</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="signup.html" id="signupLink" style="display: none;">Sign Up</a>
+    <a href="login.html" id="loginLink" style="display: none;">Login</a>
+  </div>
+  <!-- Logout button will be shown when user is logged in -->
+  <button id="logoutButton" style="display: none;" onclick="logout()">Logout</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Speak Up, Stay Anonymous</h1>
+    <p>Report anything confidentially and securely.</p>
+  </div>
+</div>
+
+<div id="questionsContainer" class="questions-container"></div>
+
+<!-- Add Comment button shown only when logged in -->
+<div class="button-container" id="commentButtonContainer" style="display: none;">
+  <button class="comment-button" onclick="openAskModal()">Add Comment</button>
+</div>
+
+<!-- Ask Question Modal -->
+<div id="askModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAskModal()">&times;</span>
+    <h2>Add Question</h2>
+
+    <div class="tips-box">
+      <h3>Whatever Questions you have, feel free to ask</h3>
+      <ul>
+        <li>Make sure your question has not been asked already</li>
+        <li>Be polite and friendly if possible</li>
+        <li>The community will help you with your problems</li>
+      </ul>
+    </div>
+
+    <textarea id="questionText" placeholder="Please type your question here" required></textarea>
+
+    <div class="ask-actions">
+      <button class="cancel-btn" onclick="closeAskModal()">Cancel</button>
+      <button class="submit-btn" onclick="submitQuestion()">Add Question</button>
+    </div>
+  </div>
+</div>
+
+<script src="../js/auth/logout.js"></script>
+<script src="../js/questions/questionForm.js"></script>
+<script src="../js/questions/CreateQuestion.js"></script>
+<script src="../js/questions/questionList.js"></script>
+
+</body>
+</html>

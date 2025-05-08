@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ask Question - Whistleblower Blog</title>
+  <link rel="stylesheet" href="../css/webpage.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Whistleblower Blog</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="login.html">Login</a>
+  </div>
+</nav>
+
+<div class="ask-container">
+  <div class="ask-box">
+    <h2>Ask a Question</h2>
+    <textarea id="questionText" placeholder="Please Type your Question in this box" required></textarea>
+    <div class="ask-actions">
+      <button class="cancel-btn" onclick="goHome()">Cancel</button>
+      <button class="submit-btn" onclick="submitQuestion()">Add Question</button>
+    </div>
+  </div>
+</div>
+
+<script src="../js/auth/logout.js"></script>
+<script src="../js/questions/questionForm.js"></script>
+<script src="../js/questions/CreateQuestion.js"></script>
+<script src="../js/questions/questionList.js"></script>
+
+
+</body>
+</html>
