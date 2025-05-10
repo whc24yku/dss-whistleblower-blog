@@ -41,15 +41,37 @@ nav ul li a {
     font-size: 14px;
   }
 .user-icon1 {
-    margin-left: 30px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto; /* Pushes icon to the far right if inside a flex container */
+  border: 2px solid #ccc;
+}
+
+.user-icon1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+  .user-icon2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Hides overflow to maintain circle */
+  margin-right: 10px; /* Adds spacing */
+  border: 2px solid #ccc; /* Optional border for visibility */
+}
+
+.user-icon2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers area without distortion */
+  display: block;
+}
+
 
   .action-button1 {
     padding: 10px 20px;
@@ -65,11 +87,7 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-.user-icon img {
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-  }
+
 
 .action-buttons {
     background-color: #590303;

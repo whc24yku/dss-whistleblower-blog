@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+/* Ask Question Box */
+.ask-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.ask-box {
+  background-color: white;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+}
+
+.ask-box textarea {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  margin-top: 1rem;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.ask-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn, .submit-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: gray;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+textarea#questionText {
+  width: 100%;
+  height: 120px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.ask-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-btn, .submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+textarea#questionText {
+  width: 100%;
+  height: 120px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.ask-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-btn, .submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.tips-box {
+  background-color: #e8f0fe;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.tips-box h3 {
+  margin-top: 0;
+}
+
+.tips-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+/* }questions showed after posting */
+.questions-container {
+  padding: 20px;
+}
+
+.question-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+}

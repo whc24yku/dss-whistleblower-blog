@@ -1,4 +1,4 @@
-// Add this to the top of your script to confirm if it's loaded
+
 console.log("CreatePost.js loaded");
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Get JWT token from localStorage
         const token = localStorage.getItem('jwt_token');
+        console.log("Token retrieved:", token); // Debugging log
+
         if (!token) {
             alert("You need to be logged in to post.");
             return;
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Parse the response
             const data = await response.json();
+            console.log("Post creation response:", data); // Debugging log
 
             // Check if the response was successful
             if (response.ok && data.status === "success") {
