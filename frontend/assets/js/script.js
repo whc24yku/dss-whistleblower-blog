@@ -74,7 +74,7 @@ if (loginForm) {
         if (data.status === 'success' && data.token) {
           localStorage.setItem('token', data.token);
           alert('Login Successful!');
-          window.location.href = "index.html";
+          window.location.href = "LandingPage.html";
         } else {
           alert(data.error || 'Login failed!');
         }
