@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Get JWT token from localStorage
-        const token = localStorage.getItem('jwt_token');
+        const token = localStorage.getItem("token"); // ✅ correct
+
         console.log("Token retrieved:", token); // Debugging log
 
         if (!token) {

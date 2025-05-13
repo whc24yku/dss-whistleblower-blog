@@ -3,6 +3,7 @@ const loginForm = document.getElementById('loginForm');
 if (loginForm) {
   loginForm.addEventListener('submit', function (e) {
     e.preventDefault();
+
     const identifier = document.getElementById('loginUsername').value.trim();
     const password = document.getElementById('loginPassword').value.trim();
 
@@ -21,17 +22,13 @@ if (loginForm) {
         if (data.status === 'success' && data.token) {
           localStorage.setItem('token', data.token);
           alert('Login Successful!');
-          if (!token) {
-            window.location.href = 'login.html'; 
-          }
-
           window.location.href = "LandingPage.html";
         } else {
           alert(data.error || 'Login failed!');
         }
       })
       .catch(error => {
-        console.error('Error:', error);
+        console.error('Fetch error:', error); // Corrected error message
         alert('Something went wrong. Please try again later.');
       });
   });

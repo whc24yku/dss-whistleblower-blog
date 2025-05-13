@@ -1,3 +1,9 @@
+// Validate Email Format
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
 // Signup Form Validation + API
 const signupForm = document.getElementById('signupForm');
 if (signupForm) {

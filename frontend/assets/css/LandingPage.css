@@ -14,7 +14,7 @@ header {
 header h1 {
     color: #841515;
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
   }
   
@@ -27,7 +27,7 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 15px;
-    margin-right: 20px;
+    margin-right: 10px;
     text-align: center;
     gap:15px;
   }

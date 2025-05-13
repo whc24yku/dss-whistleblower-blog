@@ -25,9 +25,9 @@ function submitQuestion() {
     .then(data => {
       if (data.status === 'success' || data.message === 'Question added') {
         alert('Question submitted successfully!');
-        closeAskModal();
-        document.getElementById('questionText').value = '';
-        loadQuestions();
+        closeAskModal();  // Close the modal after submitting
+        document.getElementById('questionText').value = ''; // Clear input field
+        loadQuestions();  // Reload the questions
       } else {
         alert(data.error || 'Failed to submit question.');
       }
@@ -49,7 +49,7 @@ function loadQuestions() {
     .then(res => res.json())
     .then(response => {
       const container = document.getElementById('questionsContainer');
-      container.innerHTML = '';
+      container.innerHTML = '';  // Clear existing questions
 
       const questions = Array.isArray(response)
         ? response
@@ -72,4 +72,22 @@ function loadQuestions() {
       console.error('Error loading questions:', err);
       document.getElementById('questionsContainer').innerHTML = '<p>Failed to load questions.</p>';
     });
+}
+
+// Open Ask Question Modal
+function openAskModal() {
+  document.getElementById('askModal').style.display = 'block';
+}
+
+// Close Ask Question Modal
+function closeAskModal() {
+  const modal = document.getElementById('askModal');
+  if (modal) {
+    modal.style.display = 'none';
+  }
+}
+
+// Navigate back to home page
+function goHome() {
+  window.location.href = 'index.html';  // Redirects to home page
 }
